@@ -1,0 +1,14 @@
+.main{
+    margin-left: 30%;
+    margin-top: 1.5rem;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    width: 90%;
+}
+.grids > :nth-child(1){
+    grid-column: span 2;
+}

@@ -1,0 +1,14 @@
+.header{
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.header li{
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+}

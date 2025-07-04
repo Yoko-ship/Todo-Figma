@@ -1,0 +1,89 @@
+.aside{
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    width: 25%;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+.asideMargin{
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+}
+.texts{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem;
+}
+.texts h1{
+    font-size: 2rem;
+}
+.texts button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search{
+    width: 80%;
+    border-radius: 10px;
+    background-color: #EBEBEB;
+}
+.search input{
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.3rem;
+    width: 95%;
+    background: none;
+}
+.search::after{
+    content: url("/search.svg");
+    color: black;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.tasks{
+    margin-top: 2rem;
+}
+.tasks a{
+    text-decoration: none;
+    color: black;
+}
+.tasks ul{
+    list-style: none;
+}
+.tasks li{
+    margin: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.tasks li:hover{
+    background-color: #DFDFDF;
+    border-radius: 10px;
+}
+.tasks li:first-child::before{
+    content: url("/chevrons-right.svg");
+    margin-right: 0.2rem;
+}
+.tasks li:nth-child(2)::before{
+    content: url("/list.svg");
+    margin-right: 0.2rem;
+}
+.tasks li:nth-child(3)::before{
+    content: url("/calendar.svg");
+    margin-right: 0.2rem;
+}
+.lists li:first-child::before{
+    content: url("/Rectangle 21.svg");
+    margin-right: 0.3rem;
+}
+.lists li:nth-child(2):before{
+    content: url("/Rectangle 22.svg");
+    margin-right: 0.3rem;
+}
+.lists li:nth-child(3):before{
+    content: url("/Rectangle 23.svg");
+    margin-right: 0.3rem;
+}
