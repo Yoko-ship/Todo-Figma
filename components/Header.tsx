@@ -19,9 +19,6 @@ function Header() {
             <li>
               <Link href="/tasks">Задачи</Link>
             </li>
-            <li>
-              <Link href="/about">О нас</Link>
-            </li>
           </div>
         </ul>
       </header>

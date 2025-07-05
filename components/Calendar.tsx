@@ -1,27 +1,27 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Calendar,momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import classes from "@/app/tasks/calendar/page.module.css"
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 const localizer = momentLocalizer(moment)
+import { useAppSelect } from '@/store/hooks'
 
-
-const events = [
-    {
-      title: 'Встреча',
-      start: new Date(2025, 6, 4, 10, 0),
-      end: new Date(2025, 6, 4, 11, 0),
-    },
-]
 
 function MyCalendar() {
+    const data = useAppSelect((state) => state.todo.todo).map(event => ({
+      ...event,
+      start:new Date(event.start),
+      end:new Date(event.end)
+    }))
+
     
+    console.log(data)
   return (
     <div className={classes.calendar}>
         <Calendar
             localizer={localizer}
-            events={events}
+            events={data}
             startAccessor={"start"}
             endAccessor={"end"}
             style={{height:500}}
