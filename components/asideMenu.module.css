@@ -55,9 +55,15 @@
     list-style: none;
 }
 .tasks li{
+    display: flex;
+    flex-direction: row;
     margin: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+}
+.tasks li a{
+    display: block;
+    width: 90%;
 }
 .tasks li:hover{
     background-color: #DFDFDF;
