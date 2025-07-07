@@ -53,3 +53,21 @@
     margin-right: 0.5rem;
 }
 
+
+@media screen and (max-width:1200px) {
+    .main{
+        margin-left: 0%;
+    }
+    .main h1{
+        text-align: center;
+    }
+    .today h1{
+        font-size: 1.6rem;
+    }
+    .fullSize{
+        height: 100%;
+        width: 95%;
+        margin-left: 1rem;
+    }
+    
+}

@@ -87,3 +87,22 @@
     content: url("/Rectangle 23.svg");
     margin-right: 0.3rem;
 }
+
+
+@media screen and (max-width:1200px){
+    .aside{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .texts{
+        padding: 1rem;
+    }
+    .asideMargin{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .search{
+        width: 100%;
+    }
+}

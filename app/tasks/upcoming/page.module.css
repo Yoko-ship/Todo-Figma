@@ -16,3 +16,16 @@
 .grids > *{
     align-self: start;
 }
+
+@media screen and (max-width:1200px) {
+    .main{
+        margin-left: 0%;
+    }
+    .main h2{
+        text-align: center;
+    }
+    .grids{
+        width: 95%;
+        margin-left: 1rem;
+    }
+}

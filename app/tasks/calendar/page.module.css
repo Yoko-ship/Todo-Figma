@@ -4,3 +4,12 @@
 .calendar{
     margin: 3rem 3rem 1rem 0;
 }
+
+@media screen and (max-width:1200px) {
+    .main{
+        margin-left: 0%;
+    }
+    .calendar{
+        width: 100%;
+    }
+}
