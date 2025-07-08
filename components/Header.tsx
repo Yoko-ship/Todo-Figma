@@ -25,7 +25,7 @@ function Header() {
       {pathName === "/" && (
         <aside className={classes.sidebar}>
           {pathName === "/" && (
-            <Image src={"/Frame 2.svg"} alt="todo_image" fill></Image>
+            <Image src={"/Frame 2.svg"} alt="todo_image" fill loading="lazy"></Image>
           )}
         </aside>
       )}
