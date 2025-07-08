@@ -12,14 +12,14 @@ function Header() {
       <header className={classes.header}>
         <ul>
           <li className={classes.todo}>Todo App</li>
-          <div className={classes.menus}>
-            <li>
+          <li className={classes.menus}>
+            <div>
               <Link href="/">Главное Меню</Link>
-            </li>
-            <li>
+            </div>
+            <div>
               <Link href="/tasks">Задачи</Link>
-            </li>
-          </div>
+            </div>
+          </li>
         </ul>
       </header>
       {pathName === "/" && (
